@@ -4,6 +4,9 @@ const flightCtrl = require('../controllers/flights')
 
 
 
+
+router.get('/', flightCtrl.index)
+
 /* GET users listing. */
 router.get('/new', flightCtrl.new)
 router.post('/', flightCtrl.create)
